@@ -1,0 +1,371 @@
+/***************************/
+/* BELOW 1344px (Smaller desktops) */
+/***************************/
+
+@media (max-width: 84em) {
+  .heading-primary {
+    font-size: 5.4rem !important;
+  }
+
+  .logo {
+    padding-right: 0 !important;
+  }
+}
+
+/***************************/
+/* BELOW 1072px (Landscape desktops) */
+/***************************/
+
+@media (max-width: 67rem) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25% !important;
+  }
+
+  .section-hero {
+    padding-top: 26rem !important ;
+  }
+
+  .hero {
+    max-width: 100rem !important;
+  }
+
+  .player {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .player-content {
+    text-align: left;
+  }
+
+  .player-slide .arrow-btns {
+    justify-content: center;
+  }
+
+  .section-download .container {
+    padding: 0 9.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem !important;
+  }
+
+  .grid {
+    column-gap: 4.8rem !important;
+    row-gap: 4.8rem !important;
+  }
+
+  .header {
+    padding: 0 8rem !important;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem !important;
+  }
+}
+
+/***************************/
+/* BELOW 944px (Tablets) */
+/***************************/
+
+@media (max-width: 59rem) {
+  html {
+    /* 9px / 16px  */
+    font-size: 50% !important;
+  }
+
+  .section-hero {
+    padding-top: 15rem !important;
+    padding-bottom: 0 !important;
+  }
+
+  .hero {
+    grid-template-columns: 1fr !important;
+    /* text-align: center; */
+    padding: 0 8rem !important;
+    gap: 6.4rem !important;
+    overflow: hidden;
+  }
+
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .email-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-box {
+    margin: 0 !important;
+  }
+
+  .feedback {
+    justify-content: center;
+  }
+
+  .hero-img-box {
+    position: static !important;
+  }
+
+  .hero-img {
+    transform: rotate(12deg) translate(41%, -11%);
+  }
+
+  .section-service .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-marketing .container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-marketing .img-box {
+    justify-self: center;
+  }
+
+  .section-marketing .img-box img {
+    position: static;
+  }
+
+  .section-features .container {
+    grid-template-columns: 1fr;
+  }
+
+  .img-feature-box {
+    justify-self: center;
+  }
+
+  .section-how .container.counter {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .counter-content {
+    justify-self: normal !important;
+  }
+
+  .section-pricing {
+    padding: 5.8rem 0 !important;
+  }
+
+  .section-pricing .container {
+    column-gap: 2.7rem !important;
+  }
+
+  .pricing-plan {
+    padding: 2.4rem !important;
+  }
+
+  .footer .container {
+    grid-template-columns: 1fr 1fr;
+    max-width: 72rem;
+  }
+
+  .nav-col {
+    justify-self: stretch !important;
+  }
+
+  .footer .footer-copyright {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-copyright .download-btn {
+    justify-self: center;
+  }
+
+  .footer-copyright .copyright {
+    justify-self: center;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block !important;
+    z-index: 9999;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .header {
+    padding: 0 3rem 0 10rem !important;
+  }
+
+  .main-nav-list {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav-list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 10;
+  }
+
+  .nav-list a {
+    font-size: 2rem !important;
+    font-weight: 400;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .section-service .section-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 2.4rem;
+    margin-bottom: 8rem;
+  }
+
+  .section-service .section-header .heading-text {
+    margin: 0;
+  }
+
+  .section-how .arrow-btns {
+    display: none;
+  }
+}
+
+/***************************/
+/* BELOW 704px (Smaller Tablets) */
+/***************************/
+
+@media (max-width: 44em) {
+  .section-service .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .section-how .heading-text {
+    text-align: center;
+  }
+
+  .section-how .container.counter {
+    grid-template-columns: 1fr;
+  }
+
+  .counter-content {
+    margin: 0 12rem;
+  }
+
+  .section-pricing .container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .pricing-plan {
+    margin: 0 6rem;
+  }
+
+  .section-testimonial .container {
+    grid-template-columns: none;
+    padding: 8rem 4rem !important;
+  }
+
+  .testimonial-img-box {
+    justify-self: center !important;
+  }
+
+  .testimonial-img {
+    width: 20rem !important;
+    height: 20rem !important;
+  }
+
+  .testimonials-text-box {
+    text-align: center;
+  }
+
+  .section-testimonial .arrow-btns {
+    display: none;
+  }
+
+  .testimonial-details {
+    justify-content: center !important;
+  }
+
+  .sponsers-box1,
+  .sponsers-box2 {
+    display: grid !important;
+    text-align: center !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    margin: 0 8rem;
+  }
+
+  .sponsers-box2 .sponser-item:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .sponser-item {
+    justify-self: center;
+  }
+
+  .footer .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .marketing-text .text-box {
+    text-align: center;
+  }
+
+  .marketing-features {
+    flex-direction: column;
+  }
+
+  .download-text ul li a:link,
+  .download-text ul li a:visited {
+    margin-bottom: 1.2rem;
+  }
+}
+
+/***************************/
+/* BELOW 544px (Phones) */
+/***************************/
+
+@media (max-width: 34em) {
+  .header {
+    padding: 0 2rem !important;
+  }
+
+  .nav-btns .btn {
+    padding: 2.2rem 0.8rem;
+  }
+
+  .download-btn ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+}
